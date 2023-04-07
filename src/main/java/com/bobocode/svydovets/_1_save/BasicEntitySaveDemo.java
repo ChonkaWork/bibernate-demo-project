@@ -1,17 +1,17 @@
-package org.example._1_basic_save;
+package com.bobocode.svydovets._1_save;
 
 import com.bobocode.svydovets.bibernate.config.BibernateConfiguration;
 import com.bobocode.svydovets.bibernate.session.Session;
 import com.bobocode.svydovets.bibernate.session.SessionFactory;
-import org.example.DataFactory;
-import org.example.entity.Customer;
-import org.example.entity.Order;
-import org.example.entity.User;
+import com.bobocode.svydovets.entity.Customer;
+import com.bobocode.svydovets.entity.Order;
+import com.bobocode.svydovets.entity.User;
+import com.bobocode.svydovets.utils.DataFactory;
 
 import java.util.concurrent.ThreadLocalRandom;
 
 /**
- * This class provides a basic scenario of how to save entities with different
+ * This demo shows how to save entities with different
  * {@link com.bobocode.svydovets.bibernate.annotation.GeneratedValue}
  * strategies. It demonstrates how to save an entity with an auto-generated ID
  * (using the default ID generation strategy), an entity with a sequence-generated ID,

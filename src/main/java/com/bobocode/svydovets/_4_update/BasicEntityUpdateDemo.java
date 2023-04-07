@@ -1,17 +1,17 @@
-package org.example._3_update;
+package com.bobocode.svydovets._4_update;
 
 import com.bobocode.svydovets.bibernate.config.BibernateConfiguration;
 import com.bobocode.svydovets.bibernate.session.Session;
 import com.bobocode.svydovets.bibernate.session.SessionFactory;
+import com.bobocode.svydovets.entity.Order;
 import lombok.extern.slf4j.Slf4j;
-import org.example.DataFactory;
-import org.example.entity.Order;
+import com.bobocode.svydovets.utils.DataFactory;
 
 import java.math.BigDecimal;
 import java.util.concurrent.ThreadLocalRandom;
 
 /**
- * This class provides a basic scenario of how to update an entity using Bibernate's dirty checking mechanism.
+ * This class provides a basic scenario of how to update an entity using Bibernate dirty checking mechanism.
  * It demonstrates how to save an entity with a manually specified ID,
  * update its state, and then save the updated entity back to the database using the dirty checking mechanism.
  */
