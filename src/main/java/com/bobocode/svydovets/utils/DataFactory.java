@@ -1,11 +1,13 @@
-package org.example;
+package com.bobocode.svydovets.utils;
 
-import org.example.entity.Customer;
-import org.example.entity.Order;
-import org.example.entity.User;
+import com.bobocode.svydovets.entity.Order;
+import lombok.experimental.UtilityClass;
+import com.bobocode.svydovets.entity.Customer;
+import com.bobocode.svydovets.entity.User;
 
 import java.math.BigDecimal;
 
+@UtilityClass
 public class DataFactory {
 
     public static final long DEFAULT_ID = 999L;

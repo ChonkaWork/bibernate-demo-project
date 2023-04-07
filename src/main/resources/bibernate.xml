@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <property name="svydovets.bibernate.driverClassName">org.postgresql.Driver</property>
+    <property name="svydovets.bibernate.db.url">jdbc:postgresql://localhost:5435/postgres</property>
+    <property name="svydovets.bibernate.db.username">root</property>
+    <property name="svydovets.bibernate.db.password">root</property>
+</configuration>

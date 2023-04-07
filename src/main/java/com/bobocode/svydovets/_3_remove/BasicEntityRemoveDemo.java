@@ -1,19 +1,18 @@
-package org.example._2_remove;
+package com.bobocode.svydovets._3_remove;
 
 import com.bobocode.svydovets.bibernate.config.BibernateConfiguration;
 import com.bobocode.svydovets.bibernate.session.Session;
 import com.bobocode.svydovets.bibernate.session.SessionFactory;
-import org.example.DataFactory;
-import org.example.entity.Order;
+import com.bobocode.svydovets.entity.Order;
+import com.bobocode.svydovets.utils.DataFactory;
 
 import java.util.concurrent.ThreadLocalRandom;
 
 /**
- * This class provides a basic scenario of how to remove an entity using the Bibernate ORM framework.
+ * This demo shows how to remove an entity using the Bibernate ORM framework.
  * It demonstrates how to save an entity with a manually specified ID,
  * and then remove it.
  */
-
 public class BasicEntityRemoveDemo {
     private static SessionFactory sessionFactory;
 

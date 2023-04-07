@@ -1,18 +1,18 @@
-package org.example._4_detach;
+package com.bobocode.svydovets._7_detach;
 
 
 import com.bobocode.svydovets.bibernate.config.BibernateConfiguration;
 import com.bobocode.svydovets.bibernate.session.Session;
 import com.bobocode.svydovets.bibernate.session.SessionFactory;
+import com.bobocode.svydovets.entity.Order;
+import com.bobocode.svydovets.utils.DataFactory;
 import lombok.extern.slf4j.Slf4j;
-import org.example.DataFactory;
-import org.example.entity.Order;
 
 import java.math.BigDecimal;
 import java.util.concurrent.ThreadLocalRandom;
 
 /**
- * This class provides a basic scenario of how to use the merge and detach methods in Bibernate.
+ * This demo shows how to use the merge and detach methods in Bibernate.
  * It demonstrates how to create an entity, save it to the database, detach it from the persistence context,
  * update its state, merge it back into the persistence context, and then remove it from the database.
  */
@@ -49,7 +49,6 @@ public class DetachDemo {
         }
     }
 
-    // Initialize the Hibernate session factory
     private static void initSessionFactory() {
         var configuration = new BibernateConfiguration();
         configuration.configure();

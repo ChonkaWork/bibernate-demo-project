@@ -1,4 +1,4 @@
-package org.example.entity;
+package com.bobocode.svydovets.entity;
 
 import com.bobocode.svydovets.bibernate.annotation.Column;
 import com.bobocode.svydovets.bibernate.annotation.Entity;
@@ -13,20 +13,18 @@ import lombok.Setter;
 import lombok.ToString;
 
 @Entity
-@Table("customers")
+@Table("users")
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
 @ToString
-public class Customer {
+public class User {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, sequenceName = "custom_seq")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column
-    private String name;
-    @Column
-    private String email;
-    @Column
-    private String phone;
+    @Column(name = "first_name")
+    private String firstName;
+    @Column(name = "last_name")
+    private String lastName;
 }
